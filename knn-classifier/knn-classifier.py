@@ -14,7 +14,6 @@ class KnnClassifier:
         self.X, self.y = X, y
     
     def predict(self, X:List[float]) -> int:
-        norm_list = np.array([])
         categories_list = np.array([], dtype=int)
         
         if X.shape[1] != self.X.shape[1]:
